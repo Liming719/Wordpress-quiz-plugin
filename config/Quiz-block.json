@@ -1,0 +1,29 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "payattentionplugin/are-you-paying-attention",
+    "title": "Are You Paying Attention?",    
+    "icon": "smiley",
+    "category": "common",
+    "attributes":{
+        "question":{"type": "string"},
+        "answers":{"type": "array", "default": [""]},
+        "correctAnswer":{"type": "number", "default": null},
+        "bgColor":{"type":"string", "default":"#ebebeb"},
+        "titleAlignment":{"type":"string", "default":"left"}
+    },
+    "example":{
+        "attributes":{
+            "question":"Which is my favorite number?",
+            "answers": ["1", "2", "3", "4"],
+            "correctAnswer":3,
+            "bgColor":"#90a4ae",
+            "titleAlignment":"left"
+        }
+    },
+    "description":"description",
+    "editorScript": "file:../build/index.js",
+    "editorStyle": "file:../build/index.css",
+    "script": "file:../build/frontend.js",   
+    "style": "file:../build/frontend.css"
+}

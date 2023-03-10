@@ -1,0 +1,27 @@
+.paying-attention-edit-block{
+    padding: 20px;
+    border-radius: 2px;
+    border: 1px solid #d6d6d6;
+    background-color: #f1f1f1;
+    transition: transform 0.1s ease-out;
+    align-content: center;
+    align-items: center;   
+
+    .Answer-Marker{
+        color: rgb(226, 221, 68);    
+        align-self: center;
+        &:hover{           
+            transform: scale(1.4);                
+        }
+    }
+
+    .Answer-Delete{
+        color: rgb(183, 4, 4);
+        align-self: center;
+        &:hover{
+            color: rgb(255, 54, 54) !important;
+        }
+    }
+
+    
+}
